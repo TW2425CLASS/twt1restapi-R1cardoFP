@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://twt1restapi-r1cardofp.onrender.com';
 
 // Seletores dos modais e formulários
 const alunoDialog = document.getElementById('alunoDialog');
