@@ -4,7 +4,7 @@
   "description": "API simulada com JSON Server para alunos e cursos",
   "main": "index.js",
   "scripts": {
-    "start:db": "json-server --watch ./mock-data/bd.json --port 3000",
+    "start:db": "json-server --watch ./mock-data/bd.json --port 3002",
     "start:api": "node backend/server.js"
   },
   "dependencies": {
