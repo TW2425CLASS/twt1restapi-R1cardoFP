@@ -1,1 +1,135 @@
-/* Estilos para a página */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #0001;
+  padding: 32px 24px 24px 24px;
+}
+
+h1, h2 {
+  color: #2d3a4a;
+  margin-bottom: 16px;
+}
+
+.table-container {
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafbfc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+th {
+  background: #e5e9f2;
+  color: #2d3a4a;
+  font-weight: 600;
+  border-bottom: 2px solid #d1d5db;
+}
+
+tr:nth-child(even) {
+  background: #f3f6fa;
+}
+
+tr:hover td {
+  background: #eaf2fb;
+  transition: background 0.2s;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 16px;
+  margin: 0 2px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, button:focus {
+  background: #1d4ed8;
+}
+
+#abrirAdicionarAluno, #abrirAdicionarCurso {
+  background: #059669;
+  margin-bottom: 16px;
+}
+#abrirAdicionarAluno:hover, #abrirAdicionarCurso:hover {
+  background: #047857;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 28px 24px 20px 24px;
+  box-shadow: 0 8px 32px #0003;
+  min-width: 320px;
+  max-width: 95vw;
+}
+
+dialog form > div {
+  margin-bottom: 14px;
+}
+
+dialog label {
+  display: block;
+  margin-bottom: 4px;
+  color: #374151;
+  font-weight: 500;
+}
+
+dialog input, dialog select {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #f9fafb;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+dialog button[type="submit"] {
+  background: #2563eb;
+  margin-right: 8px;
+}
+
+dialog button[type="button"] {
+  background: #e11d48;
+}
+
+dialog button[type="button"]:hover {
+  background: #be123c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 2vw;
+  }
+  table, th, td {
+    font-size: 0.95em;
+  }
+  dialog {
+    min-width: 90vw;
+    padding: 18px 6vw 14px 6vw;
+  }
+}
